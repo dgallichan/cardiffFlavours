@@ -1,0 +1,51 @@
+<!-- Container -->
+<div class="container">
+
+    <!-- Row -->
+    <div id="recipes-list">
+
+
+        {% for thisRecipe in site.data.recipes %}
+
+        <header>
+            <h2>{{ thisRecipe.recipeName }}</h2>
+            <h4>Submitted by {{ thisRecipe.recipeAuthor }}, {{ thisRecipe.authorUniSchool }}</h4>
+            <ul class="topstuff">
+                <li><strong>Serves: </strong>{{ thisRecipe.numberServed }}</li>
+                <li><strong>Preparation time:</strong>{{ thisRecipe.prepTime }}</li>
+                <li><strong>Cooking time:</strong>{{ thisRecipe.cookTime }}</li>
+            </ul>
+        </header>
+
+        <img src="images/{{ thisRecipe.imageFile }}" alt="" />
+
+        <h3>Ingredients</h3>
+        <ul style="list-style-type:none">
+            {% for ingredientsLine in thisRecipe.ingredients %}
+                <li>{{ ingredientsLine }}</li>
+            {% endfor %}
+        </ul>
+
+        <h4><emph>Indicative cost of ingredients: </emph>£ (inexpensive)
+        </h4>
+
+        <p></p>
+
+        <h3>Method</h3>
+        <p>
+           {{ thisRecipe.method }}
+        </p>
+
+        <h3>Why I chose this recipe</h3>
+        <p>
+            {{ thisRecipe.recipeStory }}
+        </p>
+
+        {$ endfor %}
+        
+
+    </div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js'></script>
