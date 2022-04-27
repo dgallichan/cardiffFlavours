@@ -1,0 +1,22 @@
+{
+    "recipeName": "Grandma's Rock Buns",
+    "recipeAuthor": "Daniel Gallichan",
+    "authorUniSchool": "School of Engineering",
+    "recipeType": "Snack / cake",
+    "recipeSuitability": ["Vegetarian"],
+    "recipeCulture": "UK / Ireland",
+    "ingredients": [
+        "90g margarine or butter",
+        "90g granulated sugar",
+        "250g self-raising flour",
+        "30g finely chopped mixed peel",
+        "1 egg (+ some milk if needed)"
+    ],
+    "method": "Put the flour and sugar into a mixing bowl and use your fingertips to rub in the butter (or margarine) until the mixture resembles fine breadcrumbs. Add the egg and use a fork to mix in until the dough sticks together and lumps will just slowly drop off the fork (add milk if too try, add flour if too wet). Divide into eight rough lumps (rocks!) on a greased baking tray and bake at 220 degrees C (200 degrees C for fan oven) for around 15 minutes until golden brown on top. They will be soft to the touch until they cool down and develop their rocky crust.",
+    "numberServed": 8,
+    "prepTime": 20,
+    "cookTime": 15,
+    "recipeCostLevel": 1,
+    "unusualIngredients": "'Mixed peel' isn't something I had needed to buy before, but can usually be found alongside raisins/sultanas in the supermarket baking aisle.",
+    "imageFile": "grandmasRockBuns.jpg"
+}
