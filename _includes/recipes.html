@@ -4,23 +4,24 @@
     <!-- Row -->
     <div id="recipes-list">
 
-        {% for recipe in site.data.recipes %}
+
+        {% for thisRecipe in site.data.recipes %}
 
         <header>
-            <h2>{{ recipe.recipeName}}</h2>
-            <h4>Submitted by {{ recipe.recipeAuthor}}, {{ recipe.authorUniSchool }}</h4>
+            <h2>{{ thisRecipe.recipeName}}</h2>
+            <h4>Submitted by {{ thisRecipe.recipeAuthor}}, {{ thisRecipe.authorUniSchool }}</h4>
             <ul class="topstuff">
-                <li><strong>Serves: </strong>{{ recipe.numberServed }}</li>
-                <li><strong>Preparation time:</strong>{{ recipe.prepTime }}</li>
-                <li><strong>Cooking time:</strong>{{ recipe.cookTime }}</li>
+                <li><strong>Serves: </strong>{{ thisRecipe.numberServed }}</li>
+                <li><strong>Preparation time:</strong>{{ thisRecipe.prepTime }}</li>
+                <li><strong>Cooking time:</strong>{{ thisRecipe.cookTime }}</li>
             </ul>
         </header>
 
-        <img src="images/{{ recipe.imageFile }}" alt="" />
+        <img src="images/{{ thisRecipe.imageFile }}" alt="" />
 
         <h3>Ingredients</h3>
         <ul style="list-style-type:none">
-            {% for ingredientsLine in recipe.ingredients %}
+            {% for ingredientsLine in thisRecipe.ingredients %}
                 <li>{{ ingredientsLine }}</li>
             {% endfor %}
         </ul>
@@ -32,12 +33,12 @@
 
         <h3>Method</h3>
         <p>
-           {{ recipe.method }}
+           {{ thisRecipe.method }}
         </p>
 
         <h3>Why I chose this recipe</h3>
         <p>
-            {{ recipe.recipeStory }}
+            {{ thisRecipe.recipeStory }}
         </p>
 
         {$ endfor %}
