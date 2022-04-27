@@ -1,0 +1,18 @@
+# Setup
+title:        Flavours of Cardiff University
+tagline:      Recipes and their stories from students, staff and friends of Cardiff University
+url:          http://dgallichan.github.io
+baseurl:      "/cardiffFlavours"
+paginate:     1
+locale:       "en"
+
+# About/contact
+author:
+  name:       
+
+# Plugins
+plugins:
+  - jekyll-paginate
+
+#Others
+markdown: kramdown
