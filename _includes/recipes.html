@@ -5,7 +5,7 @@
     <div id="recipes-list">
 
 
-        {% for thisRecipe in site.data.recipes %}
+        { % for thisRecipe in site.data.recipes % }
 
         <header>
             <h2>{{ thisRecipe.recipeName}}</h2>
@@ -21,9 +21,9 @@
 
         <h3>Ingredients</h3>
         <ul style="list-style-type:none">
-            {% for ingredientsLine in thisRecipe.ingredients %}
+            { % for ingredientsLine in thisRecipe.ingredients % }
                 <li>{{ ingredientsLine }}</li>
-            {% endfor %}
+            { % endfor % }
         </ul>
 
         <h4><emph>Indicative cost of ingredients: </emph>£ (inexpensive)
@@ -41,7 +41,7 @@
             {{ thisRecipe.recipeStory }}
         </p>
 
-        {$ endfor %}
+        { $ endfor % }
         
 
     </div>
