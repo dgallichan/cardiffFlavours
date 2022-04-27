@@ -21,7 +21,8 @@
         <h3>Ingredients</h3>
         <ul style="list-style-type:none">
             {% for ingredientsLine in recipe.ingredients %}
-            <li>{{ ingredientsLine }}</li>
+                <li>{{ ingredientsLine }}</li>
+            {% endfor %}
         </ul>
 
         <h4><emph>Indicative cost of ingredients: </emph>£ (inexpensive)
