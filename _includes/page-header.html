@@ -11,8 +11,8 @@
     <nav id="nav">
       <ul>
         {% for recipe in site.data.recipes %}
-
         <li><a href="#{{ recipe.recipeNameCode }}" id="top-link">{{ recipe.recipeName }}</span></a></li>
+        {% endfor %}
       </ul>
     </nav>
 
