@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ site.locale }}">
-  
-  {% include head.html %}
 
-  <body>
-    {% include page-header.html %}
 
-    <section class="main-content">
-      
-      {{ content }}
+{% include head.html %}
 
-      {% include page-footer.html %}
+<body class="is-preload">
 
-    </section>
 
-  </body>
+  {% include page-header.html %}
+
+
+  {{ content }}
+
+  {% include page-footer.html %}
+
+
+</body>
+
 </html>

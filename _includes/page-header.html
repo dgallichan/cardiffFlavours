@@ -1,5 +1,4 @@
-<section class="page-header">
-
+<div id="header">
   <div class="top">
 
     <!-- Logo -->
@@ -10,15 +9,11 @@
     <!-- Nav -->
     <nav id="nav">
       <ul>
-        {% for recipe in site.data.recipes %}
-        <li><a href="#{{ recipe.recipeNameCode }}" id="top-link">{{ recipe.recipeName }}</a></li>
+        {% for thisRecipe in site.data.recipes %}
+        <li><a href="#{{ thisRecipe.recipeNameCode }}" id="top-link">{{ thisRecipe.recipeName }}</a></li>
         {% endfor %}
       </ul>
     </nav>
 
   </div>
-
-
-
-
-</section>
+</div>
