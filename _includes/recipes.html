@@ -43,6 +43,13 @@
                 {{ thisRecipe.recipeStory }}
             </p>
 
+            {% if thisRecipe.unusualIngredients %}
+            <h3>Tips for finding any unusual ingredients</h3>
+            <p>
+                {{ thisRecipe.unusualIngredients }}
+            </p>
+            {% endif %}
+
         </section>
 
         {% endfor %}
